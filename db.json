@@ -1,14 +1,95 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+    "0_Start": [
+        {
+            "text" : "Du öffnest die Augen und stehst in dem Flur einer dir unbekannten Wohnung. Bis auf einen Läufer gibt es hier keine Einrichtungsgegenstände. Alles was du siehst, sind zwei Türen zu deiner linken und eine zu deiner rechten. Alle drei sind geschlossen. Der Flur selbst verschwindet mit einem Linksknick in die Ferne.",
+            "answers": {
+                "a1": {
+                    "answer": "Öffne die erste Tür links",
+                    "response": "Du öffnest die erste Tür links.",
+                    "karma": 0,
+                    "nextItem": "0_Tuer_Links_1"},
+                "a2": {
+                    "answer": "Öffne die zweite Tür links",
+                    "response": "Du öffnest die zweite Tür links.",
+                    "karma": 0,
+                    "nextItem": "0_Tuer_Links_2"},
+                "a3": {
+                    "answer": "Öffne die rechte Tür",
+                    "response": "Du öffnest die rechte Tür.",
+                    "karma": 0,
+                    "nextItem": "0_Tuer_Rechts_1"},
+                "a4": {
+                    "answer": "Geh weiter den Flur entlang",
+                    "response": "Du entscheidest dich dem Flur zu folgen.",
+                    "karma": 0,
+                    "nextItem": "0_Flur_Folgen"}
+            }
+        }
+    ],
+    "0_Tuer_Links_1": [
+        {
+            "text" : "Der Raum ist dunkel, da die Fenster von innen mit Brettern vernagelt sind. Ein zerbrochener Holztisch, ein umgekippter Stuhl, ein Gemälde an der Wand. Mehr scheint in diesem Raum nicht zu sein.",
+            "answers": {
+                "a1": {
+                    "answer": "Versuche durch das vernagelte Fenster zu schauen",
+                    "response": "Du versuchst durch das vernagelte Fenster zu schauen",
+                    "karma": 0,
+                    "nextItem": ""},
+                "a2": {
+                    "answer": "Betrachte das Gemälde",
+                    "response": "Du betrachtest das Gemälde.",
+                    "karma": 0,
+                    "nextItem": ""},
+                "a3": {
+                    "answer": "Verlasse den Raum",
+                    "response": "Du kehrst in den Flur zurück.",
+                    "karma": 0,
+                    "nextItem": ""}
+            }
+        }
+    ],
+    "0_Tuer_Links_2": [
+        {
+            "text" : "Du betrittst das Zimmer und bemerkst sofort den unangenehmen Geruch. In dem kleinen Raum sitzt jemand zusammengesunken an der gegenüberliegenden Raumwand. Die Person bewegt sich nicht. Mehrere Kerzen brennen in einem Halbkreis um ihn herum. Jemand war vor kurzem hier.",
+            "answers": {
+                "a1": {
+                    "answer": "Sprich die Person an",
+                    "response": "Du versuchst mit der Person zu sprechen.",
+                    "karma": 0,
+                    "nextItem": ""},
+                "a2": {
+                    "answer": "Berühre die Person",
+                    "response": "Du näherst dich der Person und streckst die Hand aus.",
+                    "karma": 0,
+                    "nextItem": ""},
+                "a3": {
+                    "answer": "Verlasse den Raum",
+                    "response": "Du kehrst in den Flur zurück.",
+                    "karma": 0,
+                    "nextItem": ""}
+            }
+        }
+    ],
+    "0_Tuer_Rechts_1": [
+        {
+            "text" : "Du versuchst die Tür zu öffnen, doch sie ist verschlossen. Es dringen aber Geräusche durch die Tür, die menschlich zu sein scheinen. Jemand befindet sich in dem Raum.",
+            "answers": {
+                "a1": {
+                    "answer": "Öffne die erste Tür links",
+                    "response": "Du öffnest die erste Tür links.",
+                    "karma": 0,
+                    "nextItem": "0_Tuer_Links_1"},
+                "a2": {
+                    "answer": "Öffne die zweite Tür links",
+                    "response": "Du öffnest die erste Tür links.",
+                    "karma": 0,
+                    "nextItem": "0_Tuer_Links_2"},
+                "a3": {
+                    "answer": "Geh weiter den Flur entlang",
+                    "response": "Du öffnest die erste Tür links.",
+                    "karma": 0,
+                    "nextItem": "0_Flur_Folgen"}
+            }
+        }
+    ]    
 }
